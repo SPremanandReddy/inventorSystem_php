@@ -50,7 +50,7 @@ function delete_by_id($table,$id)
     $db->query($sql);
     return ($db->affected_rows() === 1) ? true : false;
    }
-}
+} 
 /*--------------------------------------------------------------*/
 /* Function for Count id  By table name
 /*--------------------------------------------------------------*/
@@ -64,6 +64,7 @@ function count_by_id($table){
      return($db->fetch_assoc($result));
   }
 }
+
 /*--------------------------------------------------------------*/
 /* Determine if database table exists
 /*--------------------------------------------------------------*/
@@ -150,6 +151,7 @@ function tableExists($table){
   /*--------------------------------------------------------------*/
   /* Function to update the last log in of a user
   /*--------------------------------------------------------------*/
+
 
  function updateLastLogIn($user_id)
 	{
@@ -273,7 +275,7 @@ function tableExists($table){
    return find_by_sql($sql);
  }
  /*--------------------------------------------------------------*/
- /* Function for Find Highest saleing Product
+ /* Function for Find Highest saleing Product 
  /*--------------------------------------------------------------*/
  function find_higest_saleing_product($limit){
    global $db;

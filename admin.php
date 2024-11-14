@@ -14,7 +14,7 @@
  $recent_sales    = find_recent_sale_added('5')
 ?>
 <?php include_once('layouts/header.php'); ?>
-<marquee onmouseover="this.stop()" onmouseout="this.start()">
+<!-- <marquee onmouseover="this.stop()" onmouseout="this.start()"> -->
 <div class="row">
    <div class="col-md-6">
      <?php echo display_msg($msg); ?>
@@ -77,7 +77,7 @@
     </div>
 	</a>
 </div>
-</marquee>
+<!-- </marquee> -->
   <div class="row">
    <div class="col-md-4">
      <div class="panel panel-default">

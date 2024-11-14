@@ -36,7 +36,7 @@ class  Media {
    }
 
   public function upload($file)
-  {
+  { 
     if(!$file || empty($file) || !is_array($file)):
       $this->errors[] = "No file was uploaded.";
       return false;
@@ -57,7 +57,7 @@ class  Media {
   }
 
  public function process(){
-
+ 
     if(!empty($this->errors)):
       return false;
     elseif(empty($this->fileName) || empty($this->fileTempPath)):
@@ -76,7 +76,7 @@ class  Media {
  /*--------------------------------------------------------------*/
  /* Function for Process media file
  /*--------------------------------------------------------------*/
-  public function process_media(){
+  public function process_media(){ 
     if(!empty($this->errors)){
         return false;
       }
@@ -152,7 +152,7 @@ class  Media {
  /*--------------------------------------------------------------*/
  /* Function for Update user image
  /*--------------------------------------------------------------*/
-  private function update_userImg($id){
+  private function update_userImg($id){  
      global $db;
       $sql = "UPDATE users SET";
       $sql .=" image='{$db->escape($this->fileName)}'";
@@ -174,7 +174,7 @@ class  Media {
        return true;
      }
 
-   }
+   } 
 /*--------------------------------------------------------------*/
 /* Function for insert media image
 /*--------------------------------------------------------------*/

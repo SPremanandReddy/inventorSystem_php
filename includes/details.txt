@@ -1,0 +1,72 @@
+database functions
+in mysqli class, the methods are 
+1. construct by default
+2. db_connect()
+3. private $conn;
+4. public $queryId;
+5.   db_disconnect() 
+6.query($sql)
+7. fetch_array($statement) 
+8. fetch_object($statement)
+9. fetch_assoc($statement)
+10. num_rows($statement)
+11. insert_id()
+12. affected_rows() 
+13. escape($str)
+14. while_loop($loop)
+
+
+functions.php
+1, real_escape($str)
+2. remove_junk($str)
+3 first_character($str)  
+4 validate_fields($var) 
+5 display_msg($msg ='')
+6 redirect($url, $permanent = false)
+7. total_price($totals)
+8.  read_date($str)
+9.  make_date()
+10.  count_id()
+11.  randString($length = 5)
+
+session.php in session class, we have methods
+1.  __construct() 
+2.isUserLoggedIn()
+3. login($user_id)
+4. userLoginSetup()
+5. logout()
+6. msg($type ='', $msg ='')
+7. flash_msg()
+8. updateLastLogIn($user_id)
+
+
+sql methods
+1. find_all($table)
+2.  find_by_sql($sql)
+3. find_by_id($table,$id)
+4. delete_by_id($table,$id)
+5.count_by_id($table)
+6. tableExists($table)
+7. authenticate($username='', $password='')
+8.  authenticate_v2($username='', $password='')
+9.  current_user()
+10. find_all_user()
+11. find_higest_saleing_product($limit)
+12.find_all_sale()
+13. find_recent_sale_added($limit)
+14.  find_sale_by_dates($start_date,$end_date)
+15. dailySales($year,$month)
+16.monthlySales($year)
+17. page_require_level($require_level)
+
+
+upload.php contains media class and its methods
+1.file_ext($filename) 
+2.upload($file) 
+3.process()  
+4.process_media()  
+5.process_user($id) 
+6.update_userImg($id) 
+7.user_image_destroy($id) 
+8.insert_media()
+9.media_destroy($id,$file_name)

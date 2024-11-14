@@ -25,7 +25,7 @@ function first_character($str){
   $val = str_replace('-'," ",$str);
   $val = ucfirst($val);
   return $val;
-}
+} 
 /*--------------------------------------------------------------*/
 /* Function for Checking input fields not empty
 /*--------------------------------------------------------------*/
